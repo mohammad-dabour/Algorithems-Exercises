@@ -44,8 +44,8 @@ public class LongestArithmeticSubsequence {
     
 
         HashMap<Integer, Integer> [] dp = new HashMap[nums.length];
-        int maxV = -1;
-        int length = 2;
+        int maxV = 2;
+       
     
         
         for(int i = 0; i< nums.length; i++){
