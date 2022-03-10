@@ -1,4 +1,4 @@
-public class SortAnArray {
+public class SortAnArrayUsingHeap {
 
     public static void hipify(int[] nums, int n, int i){
         
