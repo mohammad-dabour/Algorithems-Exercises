@@ -5,6 +5,7 @@ public class ShortestPathBinaryMatrix {
 
     // This solution will be implemented as reguler BFS.
     // Where The queue will be holding an array elements containing  coordinates and steps count.
+    // For detailed problem description visit: https://leetcode.com/problems/shortest-path-in-binary-matrix
     public static int shortestPathBinaryMatrix(int[][] grid) {
         
         if( grid[0][0] !=0 ) return -1;
