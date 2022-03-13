@@ -1,6 +1,3 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class LargestMagicSquare {
 
     public static int largestMagicSquare(int[][] grid) {
