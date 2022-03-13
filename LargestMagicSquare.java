@@ -28,8 +28,6 @@ public class LargestMagicSquare {
             }
         }
         
-
-        
         int max = 1; //We know min can be 1. by default.
         
         for(int size = 2; size <= Math.min(m,n); size++){
