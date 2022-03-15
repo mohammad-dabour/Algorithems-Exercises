@@ -4,7 +4,7 @@ import java.util.Stack;
 
 // Here I provided 3 ways to resolve this problem. 
 // 1. recursive using DFS. 2. iterative DFS 3. BFS
-// Example to call the method as mtx = floodFill(mtx, 1, 1, 2, "dfs");
+// Example to call the method as int[][] mtx = floodFill(mtx, 1, 1, 2, "dfs");
 
 public class FloodFill {
 
