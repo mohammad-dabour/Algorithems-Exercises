@@ -30,7 +30,7 @@ public class SortAnArrayUsingHeap {
         
         // This solution will use Heap-Sort
         
-        // Step 1: Let's make sure the array is heap in another world build the heap.
+        // Step 1: Let's make sure the array is heap in another word lets build the heap.
         
         for(int i = n/2 - 1; i>=0; i--) {  // n/2-1  we're skipping the leaf nodes.
             
