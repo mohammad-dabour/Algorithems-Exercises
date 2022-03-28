@@ -28,12 +28,12 @@ public class TwoSumBST {
 
       
 
-        static public TreeNode insert(Integer val1, TreeNode root){
+        static public TreeNode insert(Integer v, TreeNode root){
             TreeNode t = root;
             TreeNode r = t;
            
        
-            int val  = (int) val1;
+            int val  = (int) v;
             if (root == null) root = new TreeNode(val, null, null);
             else{
                 while(t != null){
