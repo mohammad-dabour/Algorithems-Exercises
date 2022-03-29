@@ -22,11 +22,9 @@ public class TwoSumBST {
 
             
     }
+    
     static public class BST{
 
-     
-
-      
 
         static public TreeNode insert(Integer v, TreeNode root){
             TreeNode t = root;
@@ -50,6 +48,8 @@ public class TwoSumBST {
           
         }
     }
+    
+    
     
     private static boolean findTarget(TreeNode root, int k) {
         
