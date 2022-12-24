@@ -24,10 +24,6 @@ class Node:
     def size(self):
         return self.node_size
 
-    @size.setter
-    def size(self, size):
-        self.node_size += size
-
     @property
     def parent(self):
         return self.node_parent
@@ -42,11 +38,11 @@ class Node:
 
 
 def main():
-    inputs = open("inputs.txt", "r").readlines()
+    inputs = open("test.txt", "r").readlines()
     rootNode = Node(None, "/")
 
     all_nodes = []
-    stack = [] # to track the lef over files.
+    stack = []
 
     all_nodes.append(rootNode)
 
@@ -61,15 +57,12 @@ def main():
             currentNode.parent.setsize(currentNode.size)
             currentNode = currentNode.parent
             stack.pop()
-            
         elif "cd " in line:
             currentNode = Node(currentNode, line.strip(" \n \r ").split(" ")[2])
             all_nodes.append(currentNode)
             stack.append(currentNode)
-            
         elif "$ ls" in line:
             continue
-            
         elif "dir " not in line and "$" not in line:
             p1, p2 = line.strip(" \n \r ").split(" ")
             file = File(currentNode, p2, int(p1))
