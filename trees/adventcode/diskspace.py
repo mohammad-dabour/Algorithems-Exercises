@@ -38,7 +38,7 @@ class Node:
 
 
 def main():
-    inputs = open("test.txt", "r").readlines()
+    inputs = open("inputs.txt", "r").readlines()
     rootNode = Node(None, "/")
 
     all_nodes = []
