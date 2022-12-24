@@ -38,7 +38,7 @@ class Node:
 
 
 def main():
-    inputs = open("inputs.txt", "r").readlines()
+    inputs = open("test.txt", "r").readlines()
     rootNode = Node(None, "/")
 
     all_nodes = []
@@ -63,7 +63,7 @@ def main():
             stack.append(currentNode)
         elif "$ ls" in line:
             continue
-        elif "dir " not in line and "$" not in line:
+        else:
             p1, p2 = line.strip(" \n \r ").split(" ")
             file = File(currentNode, p2, int(p1))
             currentNode.files(file)
