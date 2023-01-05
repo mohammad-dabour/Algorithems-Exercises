@@ -1,4 +1,4 @@
-#This is adventofcode2022 day7 solution. I usually do not post my solution about adventcode  unless if I find the problem interesting. I postponed solving them until the holidays :)
+#This is adventofcode2022 day7 solution. I usually do not post my solution about adventcode  unless I find the problem interesting. I postponed solving them until the holidays :)
 class File:
     def __init__(self, parent, name, size) -> None:
         self.name = name
