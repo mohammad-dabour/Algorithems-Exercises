@@ -51,7 +51,7 @@ def col_traverse(grid1, rn, cn):
 def day8():
     inputs = open("test.txt1", "r").readlines()
     grid1 = []
-    for line in inputs:  # 6282
+    for line in inputs:
         grid1.append(list(line.strip("\n \r")))
     max_score = float("-inf")
     v = len(grid1) * 2 + ((len(grid1[0]) - 2) * 2)  # initial visible elements on edges.
