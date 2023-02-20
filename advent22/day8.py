@@ -2,7 +2,7 @@ def row_traverse(grid1, rn, cn):
     left, right = True, True
     scoresLeft = 0
     scoresRight = 0
-    # The reason I do not want to sue Any because chances not to iterate over all emelmets are higher.
+    # The reason I do not want to use Any([..]) because chances not to iterate over all elements are higher.
     # No need to iterate all elements if one is found.
     # Any() will assume you iterated over all.
     for i in range(cn - 1, -1, -1):
@@ -27,7 +27,7 @@ def col_traverse(grid1, rn, cn):
     up, down = True, True
     scoresUp = 0
     scoresDown = 0
-    # The reason I do not want to sue Any because chances not to iterate over all emelmets are higher.
+    # The reason I do not want to sue Any([..]) because chances not to iterate over all elements are higher.
     # No need to iterate all elements if one is found.
     # Any() will assume you iterated over all.
     for i in range(rn - 1, -1, -1):
