@@ -58,9 +58,7 @@ def day8():
     print("wdith ", len(grid1[0]), "height: ", len(grid1), "v = ", v)
     for i in range(1, len(grid1) - 1):  # we do not need to visit th edges.
         for j in range(1, len(grid1[0]) - 1):  # we do not need to visit th edges.
-            if i == 0 or j == 0 or i == len(grid1) - 1 or j == len(grid1[0]) - 1:
-                print("here ", i, j, len(grid1) - 1, (len(grid1[0]) - 1))
-                continue
+
             current_rows = row_traverse(grid1, i, j)
             current_col = col_traverse(grid1, i, j)
 
