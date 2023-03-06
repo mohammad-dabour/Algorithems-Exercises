@@ -36,7 +36,7 @@ func main() {
 	root.Left.Right = &Node{4, nil, nil}
 	root.Right.Left = &Node{4, nil, nil}
 	root.Right.Right = &Node{3, nil, nil}
-	fmt.Printf("Given tree is: ")
+	
 	if isSymmetric(&root) {
 		fmt.Printf("Given tree is Symmetric")
 	} else {
